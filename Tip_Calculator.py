@@ -7,8 +7,6 @@ Extra: The format of the result should be strictly in 2 decimal place
 '''
 
 
-
-
 print("Welcome to the Tip Calculator.\n")
 
 total_bill = input("What was the total bill? $")
@@ -27,6 +25,7 @@ charge_per_person = cummulative_bill/float(bill_split)
 #The round() isn't used here because it won't always print the result in exact 2 d.p when there's a leading zero
 #Inserting floats within a string is the best option and forces it to print in exact 2 d.p
 bill = "%.2f" % (charge_per_person)
+#OR bill = "{:.2f}".format(charge_per_person) 
 
 print("\nEach person should pay: $" + bill)
 
