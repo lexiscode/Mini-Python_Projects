@@ -64,3 +64,7 @@ if year_check % 4 == 0:
 else:
 #This happens when a year doesn't pass the first if condition
       print("Not leap year.")
+
+#Test these years:
+#Leap years: 2400, 2020. 1200
+#Not leap years: 1989, 1999, 2100
