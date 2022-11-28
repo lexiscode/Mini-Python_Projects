@@ -24,6 +24,12 @@ add_pepperoni = input("Do you want pepperoni? Y or N: ")
 extra_cheese = input("Do you want extra cheese? Y or N: ")
 # 🚨 Don't change the code above 👆
 
+#In case lower case values are inputted, the function below will turn it to uppercase automatically
+size = size.upper()
+add_pepperoni = add_pepperoni.upper()
+extra_cheese = extra_cheese.upper()
+
+
 #ALL CONDITIONS FOR A SMALL SIZED PIZZA
 if size == 'S':
         bill = 15 #small pizza
