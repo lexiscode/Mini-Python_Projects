@@ -146,7 +146,7 @@ if start_game == 'START':
           print("\nYou've passed the right road. The weather is sunny.\nNow there's a river, how would you like to cross it?\n")
           right_option1 = input(">> Type Swim to swim OR Boat to use a boat: ")
           right_option1 = right_option1.upper()
-          if right_option1 == SWIM:
+          if right_option1 == 'SWIM':
             print("\nArrgh, help!!!... You've been killed by a crocodile!\nEND!\n")
           else:
             print("\nYou've arrived at the other side of the river. Now there are two turns, on the left path there are money sprayed on the floor and also heads of goats around; on the right path there is an angry Python that hasn't eaten for 12 months.\n")
