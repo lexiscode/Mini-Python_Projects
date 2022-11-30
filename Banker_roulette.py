@@ -12,7 +12,6 @@ Example Output: Michael is going to buy the mean today!
 
 Hint: You might need the help of the len() function. Remember that Lists start at index 0!
 '''
-
 # Import the random module here
 import random
 # Split string method
@@ -22,14 +21,14 @@ names = names_string.split(", ")
 
 #print(names) == prints inputted lists
 
+string_length = len(names)
+rand_index = random.randint(0, string_length - 1)
+rand_name = names[rand_index]
+
+print(f"{rand_name} is going to buy the meal today!")
+
+#ORRRR
+
 x = len(names) - 1
 rand_name = names[random.randint(0,x)]
 print(f"{rand_name} is going to buy the meal today!")
-
-'''This method below won't work, so lesson learnt is that - place the randint() directly inside the names variable, dont create a separate variable 
-to hold randint(), which u then now want to place that variable inside the names index
-
-#rand_index = random.randint(0,x) 
-#rand_name = names[rand_index])
-#print(f"{rand_name}")
-'''
