@@ -32,3 +32,18 @@ print(f"{rand_name} is going to buy the meal today!")
 x = len(names) - 1
 rand_name = names[random.randint(0,x)]
 print(f"{rand_name} is going to buy the meal today!")
+
+#####################################################################################################
+#ALTERNATIVELY,
+
+
+# Import the random module here
+import random
+# Split string method
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+
+#Using the random.choice() in random module
+rand_name = random.choice(names)
+
+print(f"{rand_name} is going to buy the meal today!")
