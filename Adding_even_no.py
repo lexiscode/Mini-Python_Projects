@@ -32,5 +32,5 @@ numbers = list(range(1,101))
 #Sum of numbers from 1-100
 add_num = 0
 for number in numbers:
-  add_num ++ number
+  add_num += number
 print(add_num)
