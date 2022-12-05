@@ -44,6 +44,8 @@ print()
 #Now the above method only works when don't intend to randomize combined printted outputs. That means it's a bit limited.
 
 
+
+
 #METHOD 2:
 
 import random
@@ -66,7 +68,7 @@ user_symbols = int(input("How many symbols would you like?\n"))
 
 print("\nGenerated Password:")
 
-password_letters = ""
+password_letters = "" #we can use [] instead of "" if we want the outputs to be in list format rather than strings format, jsyk
 for letter in range(user_letters): #range default is [0 to (user_letters - 1)], that is not including the user_letters
   password_letters += letters[letter]  
   #print(password_letters) this shows the for loop steps
