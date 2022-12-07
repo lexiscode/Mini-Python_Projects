@@ -62,8 +62,10 @@ elif position == '13':   #column 1, row 3
     row3[0] = 'X'
 elif position == '23':   #column 2, row 3
     row3[1] = 'X'
-else:   #elif position == '33':    #column 2, row 3
+elif position == '33':    #column 2, row 3
     row3[2] = 'X'
+else:
+   print("Not a coordinate")
 
 #map = [row1, row2, row3] if placed here, the map variable will be updated but it won't display in a 3x3
 #square box if printed with the variable name 'map'.
