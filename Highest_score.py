@@ -21,5 +21,6 @@ highest_score = 0
 for score in student_scores:
     if score > highest_score:
         highest_score = score
+    #print(highest_score) to watch how the loop moves
 
 print(f"The highest score in the class is: {highest_score}")
