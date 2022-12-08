@@ -24,3 +24,12 @@ for score in student_scores:
     #print(highest_score) to watch how the loop moves
 
 print(f"The highest score in the class is: {highest_score}")
+
+###########FOR LOWEST SCORE
+lowest_score = 0
+for score in student_scores:
+    if score < lowest_score:
+        lowest_score = score
+    #print(lowest_score) to watch how the loop moves
+
+print(f"The lowest score in the class is: {lowest_score}")
