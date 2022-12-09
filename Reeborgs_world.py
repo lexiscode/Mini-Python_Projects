@@ -9,7 +9,7 @@ def turn_right():
     turn_around()
     turn_left()
     
-def robot_path():
+def robot_jump():
     move()
     turn_left()
     move()
