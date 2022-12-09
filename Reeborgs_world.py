@@ -136,16 +136,19 @@ def turn_right():
     turn_around()
     turn_left()
 
-    # has been modified below
+# Below has been modified 
 def robot_jump():
     turn_left()
     while wall_on_right():
         move()
+        
     turn_right() #else
     move()
     turn_right()
+    
     while front_is_clear():
         move()
+        
     turn_left() #else
     
 #below remains unchanged regardless of which you use
