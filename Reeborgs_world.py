@@ -45,7 +45,7 @@ while number_of_hurdles > 0:
     
     
 ############################################################################################
-
+#Hurdle 2
 
 '''
 Reeborg has entered a hurdle race, but he does not know in advance how long the race is. Make him run the course, 
@@ -65,12 +65,55 @@ while not at_goal():
 while at_goal() != True:
     robot_jump()
 
+################################################################################
+#Hurdle 3
+
+'''
+Reeborg has entered a hurdle race. Make him run the course, following the path shown.
+The position and number of hurdles changes each time this world is reloaded.
+
+What you need to know: The functions move() and turn_left().
+                       The conditions front_is_clear() or wall_in_front(), at_goal(), and their negation.
+                       How to use a while loop and an if statement.
+Your program should also be valid for worlds Hurdles 1 and Hurdles 2.
+'''
 
 
+def turn_around():
+    turn_left()
+    turn_left()
 
+def turn_right():
+    turn_around()
+    turn_left()
+# has been modified below
+def robot_jump():
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+  
 
-
-
+while not at_goal():
+    if wall_in_front():
+        robot_jump()
+    else:
+       move()
+#Alternatively,
+while not at_goal():
+    if wall_in_front():
+        robot_jump()
+    elif front_is_clear():
+        move()
+#Alternatively,
+while not at_goal():
+    if front_is_clear():
+        move()
+    elif wall_in_front():
+        robot_jump()
 
 
 
