@@ -136,7 +136,7 @@ password = password_letters + password_numbers + password_symbol   #strings addi
 ###Added features
 
 #We will have to first convert our combinded strings into lists then shuffle it again
-strings_to_list = [i for i in password]
+strings_to_list = [i for i in password] #OR  strings_to_list = list(password)
 #print(strings_to_list)
 random.shuffle(strings_to_list)
 #print(strings_to_list)
