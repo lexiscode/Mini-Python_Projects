@@ -29,7 +29,7 @@ while '__' in str_rword_list:
     #CHECK IF THE GUESSED LETTER IS IN THE WORD
     copy_rword_list = space_join.split() 
 
-    if guessed_letter in copy_rword_list:
+    if guessed_letter in copy_rword_list: #guessed_letter is a str word, is different from mere using i or something of that sort
         # Search the index where the guessed letter is located
         index_search = copy_rword_list.index(guessed_letter)
         # Replace the blankdash-value where the index is located in the rword_list, with the guessed letter 
