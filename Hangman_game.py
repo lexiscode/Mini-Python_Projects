@@ -3,7 +3,8 @@ import random
 print("##THE HANGMAN GAME##\n")
 
 ## GENERATE A RANDOM WORD ##
-words = ['the', 'keywords', 'for', 'the', 'four', 'data', 'modifiers', 'are', 'signed', 'unsigned', 'short', 'and', 'long', 'you', 'also', 'going', 'learn', 'about', 'several', 'mathematical', 'functions', 'provided', 'by', 'language', 'such']
+words = ['the', 'keywords', 'for', 'the', 'four', 'data', 'modifiers', 'are', 'signed', 'unsigned', 'short', 'and', 'long', 'you', 'also', 
+         'going', 'learn', 'about', 'several', 'mathematical', 'functions', 'provided', 'by', 'language', 'such']
 # Pick a word/string at random from the list above
 rword_str = random.choice(words)
 
