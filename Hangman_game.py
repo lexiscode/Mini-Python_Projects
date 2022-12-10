@@ -17,7 +17,7 @@ print(rword_list)
 for i in range(len(rword_list)):
     rword_list[i] = ' __ '
     #print(rword_list)
-#print(rword_list)
+#print(rword_list)  #rword_list has been updated with dashes as values
 str_rword_list = ''.join(rword_list) #back to string
 print(f"Guess the letters: {str_rword_list}\n") 
 
