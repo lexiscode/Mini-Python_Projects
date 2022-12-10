@@ -24,6 +24,7 @@ print(f"Guess the letters: {str_rword_list}\n")
 while '__' in str_rword_list:
     ##ASK THE USER TO GUESS A LETTER
     guessed_letter = input("Guess a letter: ")
+    guessed_letter.lower()
 
     #CHECK IF THE GUESSED LETTER IS IN THE WORD
     copy_rword_list = space_join.split() 
