@@ -2,6 +2,63 @@ import random
 
 print("##THE HANGMAN GAME##\n")
 
+stages = ['''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========
+''']
+
 ## GENERATE A RANDOM WORD ##
 words = ['the', 'keywords', 'for', 'the', 'four', 'data', 'modifiers', 'are', 'signed', 'unsigned', 'short', 'and', 'long', 'you', 'also', 
          'going', 'learn', 'about', 'several', 'mathematical', 'functions', 'provided', 'by', 'language', 'such']
@@ -21,7 +78,11 @@ for i in range(len(rword_list)):
 str_rword_list = ''.join(rword_list) #back to string
 print(f"Guess the letters: {str_rword_list}\n") 
 
-while '__' in str_rword_list:
+##Numbers of 6 tries when word ain't in the letters
+life_lines = 0
+
+end_of_game = False
+while end_of_game == False:
     ##ASK THE USER TO GUESS A LETTER
     guessed_letter = input("Guess a letter: ")
     guessed_letter.lower()
@@ -38,7 +99,17 @@ while '__' in str_rword_list:
         # Change rword_list back to string
         str_rword_list = ''.join(rword_list) #back to string
         print(str_rword_list)
+        
+    # Check if all the blank-dashes are filled or not
+    if '__' not in str_rword_list:
+        end_of_game = True
+        print("\nYOU WIN!!!")
 
-        #Check if all the blank-dashes are filled or not
-        if '__' not in str_rword_list:
-            print("\nYOU WIN!!!\nGAME OVER!")
+    #Hanging man when gussed_letter is not present
+    if guessed_letter not in copy_rword_list:
+        life_lines += 1
+        if life_lines == 6:
+            end_of_game = True
+            print("YOU LOSE!")
+
+    print(stages[life_lines])
