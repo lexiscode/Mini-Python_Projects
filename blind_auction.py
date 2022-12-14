@@ -19,7 +19,20 @@ The winner is Vincent with a bid of $300
 
 
 from replit import clear 
-from art import logo
+
+logo = '''
+                         ___________
+                         \         /
+                          )_______(
+                          |"""""""|_.-._,.---------.,_.-._
+                          |       | | |               | | ''-.
+                          |       |_| |_             _| |_..-'
+                          |_______| '-' `'---------'` '-'
+                          )"""""""(
+                         /_________\\
+                       .-------------.
+                      /_______________\\
+'''
 print(logo)
 
 bids = {} #new empty dictionary
