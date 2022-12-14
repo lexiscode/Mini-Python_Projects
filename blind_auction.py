@@ -57,7 +57,10 @@ while bidding_finished == True:
   should_continue = input("Are there any other bidders? Type 'yes or 'no'.\n")
   if should_continue == "no":
     bidding_finished = False
+    # example inputs by user, bids = {"Angela": 123, "James": 321}
+    #the bids then enter inside the function and do its works there to print out result
     find_highest_bidder(bids)
+  
   # below is for replit screen clearing
   elif should_continue == "yes":
     clear()
