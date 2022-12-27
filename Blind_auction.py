@@ -49,6 +49,8 @@ def find_highest_bidder(bidding_record):
       winner_name = bidder #bidder is the key name
   print(f"The winner is {winner_name} with a bid of ${highest_bid}")
 
+  
+# creating lists of dictionaries through users inputs
 bidding_finished = True
 while bidding_finished == True:
   name = input("What is your name?: ")
